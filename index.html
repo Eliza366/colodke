@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ласунчик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Ласунчик</div>
+        <nav>
+            <ul>
+                <li><a href="#products">Продукти</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Ласкаво просимо до Ласунчик!</h1>
+        <p>Ваш рай для солодощів</p>
+    </section>
+
+    <section id="cart">
+        <h2>Кошик</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Загальна сума: 0 грн</p>
+        <p class="lololo">оформити замовлення</p>
+    </section>
+
+    <section id="products">
+        <h2>Наші солодощі</h2>
+    </section>
+    <section class="jele">
+        <h2 class="o">Желейки</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://syto-pyano.com.ua/content/images/23/387x480l50nn0/33152909408906.jpg" alt="Цукерка Ferrero Rocher ">
+                <h3>Желейки Haribo</h3>
+                <p>Ціна: 300 грн</p>
+                <button data-name="Желейки Haribo" data-price="300">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <img src="https://images.prom.ua/4737428028_w640_h640_zhelejki-trolli-strawberry.jpg" alt="Цукерка Ferrero Rocher ">
+                <h3>Желейки Trolli Strawberry Kiss</h3>
+                <p>Ціна: 50 грн</p>
+                <button data-name="Желейки Trolli Strawberry Kiss" data-price="50">Додати до кошика</button>
+            </div>
+            <div class="product">
+                <img src="https://images.prom.ua/4428860460_zhelejki-roshen-yummi.jpg" alt="Цукерка Ferrero Rocher ">
+                <h3>ЖЕЛЕЙКИ ROSHEN YUMMI GUMMI</h3>
+                <p>Ціна: 30 грн</p>
+                <button data-name="ЖЕЛЕЙКИ ROSHEN YUMMI GUMMI" data-price="30">Додати до кошика</button>
+            </div>
+        </div>
+    </section>
+    <h2 class="o">шоколадки</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0JJoZ7HMg9eyWmXRwrBF2CiYuedC1RsJKoPeSHXirgt8jEzqBeWnGkw1rfaZBGtBLv9g&usqp=CAU" alt="Шоколад">
+            <h3>Шоколад LACMI</h3>
+            <p>Ціна: 100 грн</p>
+            <button data-name="Шоколад LACMI" data-price="100">  Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://api.nashkraj.com.ua/img/205504.png" alt="Шоколад">
+            <h3>Шоколад milka</h3>
+            <p>Ціна: 100 грн</p>
+            <button data-name="Шоколад milka" data-price="100">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://millennium-trade.com/image/cache/catalog/Millennium_Gold_molochnyi-470x310.jpg" alt="Шоколад">
+            <h3>Шоколад “Millennium Gold”</h3>
+            <p>Ціна: 60 грн</p>
+            <button data-name="Millennium Gold" data-price="60">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://img2.zakaz.ua/b2448ee7685b461cb7bf1ed80c67ab5d/1707749081-s350x350.jpg" alt="Шоколад">
+            <h3>молочний шоколад КОРОНА</h3>
+            <p>Ціна: 40 грн</p>
+            <button data-name="молочний шоколад КОРОНА" data-price="40">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://varus.ua/img/product/1140/1140/118626" alt="Шоколад">
+            <h3>горіховий шоколад КОРОНА</h3>
+            <p>Ціна: 30 грн</p>
+            <button data-name="горіховий шоколад КОРОНА" data-price="30">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://turcoffee.ua/ftp/photos/3191c0dc-798a-11ef-9b2a-e231c8f4e7f8.F002.JPG" alt="Шоколад">
+            <h3>дубайський шоколад</h3>
+            <p>Ціна: 200 грн</p>
+            <button data-name="дубайський шоколад" data-price="200">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://img3.zakaz.ua/src.1609266635.ad72436478c_2020-12-29_Tamara/src.1609266635.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg" alt="Шоколад">
+            <h3>ROSHEN з чорничним наповненям</h3>
+            <p>Ціна: 20 грн</p>
+            <button data-name="ROSHEN з чорничним наповненям" data-price="20">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://market.rukavychka.ua/image/cache/catalog/products/0512010995/0512010995-228x228.jpg" alt="Шоколад">
+            <h3>білий шоколад MILLENNIUM</h3>
+            <p>Ціна: 30 грн</p>
+            <button data-name="білий шоколад MILLENNIUM" data-price="30">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://market.rukavychka.ua/image/cache/catalog/products/0512011045/0512011045-228x228.jpg" alt="Шоколад">
+            <h3>Молочний шоколад Very Peri Арахіс</h3>
+            <p>Ціна: 45 грн</p>
+            <button data-name="Молочний шоколад Very Peri Арахіс" data-price="45">Додати до кошика</button>
+        </div>
+    </div>
+    <h2 class="o">цукерки</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-btIoNAQ734olHQh41x0LqcUPCt3RO1HWh3_RWndGkNya2q-iwL2J1IHGKGQ7L5_E5yM&usqp=CAU" alt="Цукерка Ferrero Rocher ">
+            <h3>Цукерки</h3>
+            <p>Ціна: 300 грн</p>
+            <button data-name="Цукерки" data-price="300">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://happypen-photos.s3.eu-north-1.amazonaws.com/129472/podarok-novogodnii-2022-milka-assorti-162g-milka0" alt="Шоколад">
+            <h3>бокс від milka</h3>
+            <p>Ціна: 1000 грн</p>
+            <button data-name="бокс від milka" data-price="1000">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://vizok.market/content/images/36/700x700l80mc0/40301188477299.webp" alt="Шоколад">
+            <h3>Цукерки Raffaello </h3>
+            <p>Ціна: 90 грн</p>
+            <button data-name="Цукерки Raffaello" data-price="90">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://baza.biz.ua/files/media/catalog2/sweets/Photoroom-20240726_165225.jpg" alt="Шоколад">
+            <h3>Жувальна гумка Кислиця </h3>
+            <p>Ціна: 90 грн</p>
+            <button data-name="Жувальна гумка Кислиця " data-price="90">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://coffeeok.com.ua/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/1/0/1007814-1.jpg" alt="Шоколад">
+            <h3>Набір цукерок Ritter Sport Schoko Gruss</h3>
+            <p>Ціна:220 грн</p>
+            <button data-name="Набір цукерок Ritter Sport Schoko Gruss" data-price="220">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://coffeeok.com.ua/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/4/4/4483434_1_2.jpg" alt="Шоколад">
+            <h3>Молочний шоколад Toblerone</h3>
+            <p>Ціна:120 грн</p>
+            <button data-name="Молочний шоколад Toblerone" data-price="120">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://content1.rozetka.com.ua/goods/images/big/416061998.jpg" alt="Шоколад">
+            <h3>цукерки milka</h3>
+            <p>Ціна: 150 грн</p>
+            <button data-name="цукерки milka" data-price="150">Додати до кошика</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.apteka911.ua/content/shop/products/104149/molochnyiy-shokolad-kinder-kinder-chocolate-s-molochnoy-nachinkoy-100-g-ferrero-ooo-big-800x800-0284.jpg" alt="Шоколад">
+            <h3>Молочний шоколад KINDER</h3>
+            <p>Ціна: 50 грн</p>
+            <button data-name="Молочний шоколад KINDER" data-price="50">Додати до кошика</button>
+        </div>
+
+        <div class="product">
+            <img src="https://market.rukavychka.ua/image/cache/catalog/products/0512011010/0512011010-228x228.jpg" alt="Шоколад">
+            <h3>Шоколадне печево Oreo MILKA</h3>
+            <p>Ціна: 15 грн</p>
+            <button data-name="Шоколадне печево Oreo MILKA" data-price="15">Додати до кошика</button>
+        </div>
+    </div>
+    <h2 class="o">Маршмєллоу</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://coffeeok.com.ua/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/0/1006481-1.jpg" alt="Шоколад">
+            <h3>Маршмєллоу ЇжНаше </h3>
+            <p>Ціна: 30 грн</p>
+            <button data-name="Маршмєллоу ЇжНаше " data-price="30">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/w/6/marshmellou_haribo_chocolate_62g.jpg" alt="Шоколад">
+            <h3>Маршмеллоу Haribo CHOCOLATE</h3>
+            <p>Ціна: 80 грн</p>
+            <button data-name="Маршмеллоу Haribo CHOCOLATE" data-price="80">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://catalog.detmir.st/media/cIIy0J4tpb1yFFcRjT46KS_qs0CSu6wdwh9KoeN0czo=" alt="Шоколад">
+            <h3>Суфле-маршмеллоу HARIBO </h3>
+            <p>Ціна: 30 грн</p>
+            <button data-name="Суфле-маршмеллоу HARIBO " data-price="30">Додати до кошика</button>
+        </div>
+    </div>
+    <h2 class="o">Пасти</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1bwFuh6qesI_kW06JfU2eTDAOP_0yjWOG3DXtQmZvk1uMJbhDEUXaylBUlsFNixhD0zZZu4RXUCGBgFDdu6CuY-zs7m1nOpNjM8IAIXo1H6qnvRGkTvCdOQs1Ey7bi4r4StqWX7f7xF0&usqp=CAc" alt="Шоколад">
+            <h3>Шоколадна паста Nutella </h3>
+            <p>Ціна: 490 грн</p>
+            <button data-name="Шоколадна паста Nutella " data-price="490">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://nuts.org.ua/wp-content/uploads/2020/10/shokoladnaya-pasta-chocofini-s-orehami-400-g.jpg" alt="Шоколад">
+            <h3>Шоколадна паста Chocofini </h3>
+            <p>Ціна: 100 грн</p>
+            <button data-name="Шоколадна паста Chocofini " data-price="100">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://do-smaku.com.ua/ru/?attachment_id=37698/" alt="Шоколад">
+            <h3>Шоколадна паста кокосова Bounty</h3>
+            <p>Ціна: 150 грн</p>
+            <button data-name="Шоколадна паста кокосова Bounty " data-price="150">Додати до кошика</button>
+        </div>
+    </div>
+    <h2 class="o">Чупа чуаси</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://baza.biz.ua/files/media/catalog2/sweets/Photoroom-20240729_105402.jpg" alt="Шоколад">
+            <h3>Карамель Chupa Chups </h3>
+            <p>Ціна: 15 грн</p>
+            <button data-name="Карамель Chupa Chups  " data-price="15">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://agusik.com.ua/232108-Agusik_thickbox/chupa-chups-karamel-frukty-assorti-12-g-84196675.jpg" alt="Шоколад">
+            <h3>Карамель Chupa Chups апельсин</h3>
+            <p>Ціна: 15 грн</p>
+            <button data-name="Карамель Chupa Chups апельсин" data-price="15">Додати до кошика</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR2lApWzFj-a1wul1i9kX5GlJXLivKAer9wAd86MIVcbkN7DP7DyIswin84_7Hvb840Y7v4aH0QnolRU93Q-Og1kQD9jIE_cNWv90PouALV7rEF8niBGAZhvg&usqp=CAE" alt="Шоколад">
+            <h3> Chupa Chups Bubble Gum </h3>
+            <p>Ціна: 205 грн</p>
+            <button data-name="Chupa Chups Bubble Gum " data-price="205">Додати до кошика</button>
+        </div>
+    </div>
+    <section id="reviews">
+        <h2>Відгуки наших клієнтів</h2>
+        <div class="review">
+            <p>"Цукерки просто фантастичні! Обов'язково замовлю ще."</p>
+            <h4>- Маша</h4>
+        </div>
+        <div class="review">
+            <p>"Шоколад найкращий, який я куштувала. Рекомендую!"</p>
+            <h4>- Поліна</h4>
+        </div>
+        <div class="review">
+            <p>"Справжня насолода! Замовляли шоколадний набір, і кожен шматочок – це витвір мистецтва. Смак неймовірний, а упаковка така красива, що навіть шкода відкривати. Обов’язково замовимо ще!"</p>
+            <h4>- Марія</h4>
+        </div>
+        <div class="review">
+            <p>"Рекомендуємо всім любителям солодощів! Макаруни тануть у роті, а медові пряники вразили навіть найвибагливіших гостей. Великий вибір і приємні ціни – ідеальний подарунок для близьких!"</p>
+            <h4>- Таня</h4>
+        </div>
+        <div class="review">
+            <p>"Замовлення отримали вчасно, усе було свіжим і дуже якісним. Окреме спасибі за приємний бонус у вигляді безкоштовного зразочка! Тепер ми ваші постійні клієнти. :)"</p>
+            <h4>- Андрій</h4>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Контакти</h2>
+        <p>Email: ...</p>
+        <p>Телефон: ...</p>
+        <p>Адрес: ...</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
