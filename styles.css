@@ -84,38 +84,6 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.product {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    margin-top: 30px;
-}
-
-.product:hover {
-    transform: translateY(-10px);
-}
-
-.product img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-button {
-    background-color: #8d6e63;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #6d4c41;
-}
-
 #reviews {
     background-color: #efebe9;
     padding: 20px;
@@ -160,4 +128,62 @@ img {
 .jele {
     margin-top: 50px;
     height: 400px;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px; /* Встановлюємо фіксовану ширину */
+    height: 300px; /* Встановлюємо фіксовану висоту */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+     transition: transform 0.3s;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover; /* Щоб зображення не спотворювалися */
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d6e63;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #6d4c41;
+  
+}
+.product:hover {
+    transform: translateY(-10px);
+    border: solid 1px #4e342e;
 }
